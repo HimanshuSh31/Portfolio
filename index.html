@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Sharma - Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-violet-500 z-[9999]" style="width: 0%;"></div>
+
+  <!-- Sticky Social Bar -->
+  <div class="fixed right-0 bottom-24 flex flex-col gap-3 pr-2 z-50 text-violet-500 text-xl">
+    <a href="https://www.linkedin.com/in/himanshu-sharma31/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/HimanshuSh31" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:himanshu.sharma3100@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="hidden fixed bottom-5 right-5 bg-violet-600 hover:bg-violet-700 text-white p-3 rounded-full shadow-lg text-xl z-50">
+    ↑
+  </button>
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-violet-600 dark:text-violet-400">Himanshu Sharma</h1>
+      <div class="flex items-center space-x-4">
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="toggle-dark">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-16 px-4 bg-gradient-to-br from-violet-600 to-indigo-600 text-white">
+    <div class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8 text-center md:text-left">
+      <div class="flex-1">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Hi, I'm Himanshu Sharma</h2>
+        <p class="text-base sm:text-lg mb-6">AI/ML Enthusiast & Aspiring Engineer</p>
+        <a href="https://drive.google.com/uc?export=download&id=1yGCNPi14KcwNt__YiOIiKWlwlhrI-Iox"
+   class="bg-white text-violet-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-violet-100 transition duration-300 hover:scale-105">
+  📄 Download Resume
+</a>
+      </div>
+      <div>
+        <img src="profile.jpg" alt="Himanshu Sharma" class="w-40 h-40 md:w-52 md:h-52 object-cover rounded-full border-4 border-white shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section-container">
+    <h3 class="section-heading">Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Deep Learning</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">.NET</div>
+      <div class="skill-card">Jupyter</div>
+      <div class="skill-card">Firebase</div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section-container">
+    <h3 class="section-heading">Certifications</h3>
+    <ul class="space-y-4" id="cert-list">
+  <li class="cert-card">
+    Deloitte Australia - Data Analytics Job Simulation<br>
+    <span class="cert-meta">Forage · Issued May 2025 · ID: jFkb7jcnG2K7rqYvx</span><br>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_iuL7YGJQAZoEt5Tm2_1746544004623_completion_certificate.pdf" target="_blank"
+       class="text-violet-600 dark:text-violet-400 font-medium underline">View Certificate</a>
+  </li>
+
+  <li class="cert-card">
+    Deloitte Australia - Technology Job Simulation<br>
+    <span class="cert-meta">Forage · Issued May 2025 · ID: c9eJFpY2NTbW6iazq</span><br>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_iuL7YGJQAZoEt5Tm2_1747806699371_completion_certificate.pdf" target="_blank"
+       class="text-violet-600 dark:text-violet-400 font-medium underline">View Certificate</a>
+  </li>
+
+  <li class="cert-card">
+    Introduction to Internet of Things<br>
+    <span class="cert-meta">IIT Bombay · Issued Dec 2024 · ID: LJNS1OTREEAL</span><br>
+    <a href="https://www.coursera.org/account/accomplishments/verify/LJNS1OTREEAL" target="_blank"
+       class="text-violet-600 dark:text-violet-400 font-medium underline">View Certificate</a>
+  </li>
+
+  <li class="cert-card">
+    Introduction to Large Language Models<br>
+    <span class="cert-meta">Google Cloud Community India · Issued Dec 2024 · ID: FQV27RI7PEPM</span><br>
+    <a href="https://www.coursera.org/account/accomplishments/verify/FQV27RI7PEPM" target="_blank"
+       class="text-violet-600 dark:text-violet-400 font-medium underline">View Certificate</a>
+  </li>
+
+  <li class="cert-card">
+    IOT Concept And Application<br>
+    <span class="cert-meta">TDRA · Issued Feb 2024 · ID: 268840</span><br>
+    <a href="https://academy.tdra.gov.ae/verify?i=268840" target="_blank"
+       class="text-violet-600 dark:text-violet-400 font-medium underline">View Certificate</a>
+  </li>
+</ul>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section-container">
+    <h3 class="section-heading">Projects</h3>
+    <div class="space-y-6">
+      <div class="project-card">
+        <h4>Pharmacy Management System</h4>
+        <p class="project-meta">Python · SQL</p>
+        <p>A Python and SQL-based Pharmacy Management System designed to streamline drug, customer, and order operations with role-based access and a user-friendly interface.</p>
+      </div>
+      <div class="project-card">
+        <h4>Movie Recommendation System</h4>
+        <p class="project-meta">Python · Jupyter</p>
+        <p>A Python-based Movie Recommendation System built in Jupyter Notebook that suggests films using data-driven algorithms for personalized user experiences.</p>
+      </div>
+      <div class="project-card">
+        <h4>Customer is King</h4>
+        <p class="project-meta">Unity · Firebase</p>
+        <p>A strategic simulation game where players manage an equity brokerage firm, making critical business decisions to outperform competitors in a dynamic, data-driven market environment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-container text-center">
+    <h3 class="section-heading">Contact Me</h3>
+    <p class="mb-6">Feel free to drop a message. I'd love to connect!</p>
+    <form id="contact-form" class="max-w-xl mx-auto text-left space-y-4">
+      <input type="text" name="name" required placeholder="Name" class="input-box">
+      <input type="email" name="email" required placeholder="Email" class="input-box">
+      <textarea name="message" rows="4" required placeholder="Message" class="input-box"></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p id="form-success" class="text-green-600 font-medium mt-4 hidden">✅ Your message has been sent!</p>
+    </form>
+    <div class="mt-8 text-sm text-gray-600 dark:text-gray-400 space-y-2">
+      <p>Email: <a href="mailto:himanshu.sharma3100@gmail.com" class="text-violet-600 dark:text-violet-400">himanshu.sharma3100@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/himanshu-sharma31/" class="text-violet-600 dark:text-violet-400">himanshu-sharma31</a></p>
+      <p>GitHub: <a href="https://github.com/HimanshuSh31" class="text-violet-600 dark:text-violet-400">HimanshuSh31</a></p>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

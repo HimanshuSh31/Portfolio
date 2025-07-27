@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+.section-container {
+  padding: 4rem 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.section-heading {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.skill-card,
+.cert-card,
+.project-card {
+  background: white;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+.dark .skill-card,
+.dark .cert-card,
+.dark .project-card {
+  background-color: #2d3748;
+}
+.cert-meta,
+.project-meta {
+  font-size: 0.875rem;
+  color: gray;
+}
+.input-box {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background: white;
+}
+.dark .input-box {
+  background: #4a5568;
+  color: white;
+  border-color: #718096;
+}
+.submit-btn {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #6d28d9;
+  transform: scale(1.05);
+}
+.reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
